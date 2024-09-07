@@ -1,0 +1,872 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<title>유카베스트</title>
+		<link rel="stylesheet" type="text/css" href="/css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="/js/jquery-ui.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/layout.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/modal.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/board.css"/>
+		<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/> -->
+		<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
+		
+								    <!-- 메인일때 -->
+		    <link rel="stylesheet" type="text/css" href="/css/main.css"/>
+		
+		<script type="text/javascript" src="/js/jquery-1.12.2.min.js"></script>
+		<script type="text/javascript" src="/js/jquery.bxslider.js"></script>
+		<script type="text/javascript" src="/js/jquery-ui.js"></script>
+		<script type="text/javascript" src="/js/base.js"></script>
+		<script type="text/javascript" src="/js/module.js"></script>
+		<script type="text/javascript" src="/js/custom.js"></script>
+
+		<script type="text/javascript" src="/js/modal.js"></script><!-- 지우지마세요 -->
+
+		<link rel="shortcut icon" href="/images/favicon.png"/>
+		<meta property="og:image" content="/upload/site/og-img.jpg">
+		<link rel="canonical" href="" />
+		<link rel="alternate" href="" />
+		<meta property="og:url" content="" />
+		<meta property="og:title" content="유카베스트" />
+		<meta name="description"  content="유카베스트" />
+		<meta property="og:description" content="자동차보험 비교건적서비스 유카베스트" />
+		<meta property="og:site_name" content="유카베스트" />
+		<meta property="naver-site-verification" content="" />
+		<meta name="google-site-verification" content="" />
+		<meta property="og:type" content="website" />
+
+		<!--[if lte IE 10]>
+			<script type="text/javascript">
+				 document.write('<div id="update">보고계신 사이트는 <b>익스플로러11에 최적화 된</b> 사이트 입니다. Windows Internet Explorer를 <b>업데이트</b>를 받으세요 <a href="http://windows.microsoft.com/ko-KR/internet-explorer/downloads/ie" target="_blank" title="새창">Internet Explorer 업데이트하기</a></div>');
+			</script>
+		<![endif]-->
+
+	</head>
+	<body>
+	<script type="text/javascript">
+//<![CDATA[
+	// 쿠키 체크
+	function getCookie(name)
+	{
+			var nameOfCookie = name + "=";
+			var x = 0;
+			while ( x <= document.cookie.length )
+			{
+					var y = (x+nameOfCookie.length);
+					if ( document.cookie.substring( x, y ) == nameOfCookie ) {
+							if ( (endOfCookie=document.cookie.indexOf( ";", y )) == -1 )
+									endOfCookie = document.cookie.length;
+							return unescape( document.cookie.substring( y, endOfCookie ) );
+					}
+					x = document.cookie.indexOf( " ", x ) + 1;
+					if ( x == 0 )
+							break;
+			}
+			return "";
+
+	}
+
+	//]]>
+</script><script type="text/javascript">
+	function setCookie( name, value, expirehours ) { 
+		var todayDate = new Date(); 
+		todayDate.setHours( todayDate.getHours() + expirehours ); 
+		document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";" 
+	} 
+	function closeWin(no) { 
+		document.getElementById("layer_"+no).style.display = "none";
+	}
+	function todaycloseWin(no) { 
+		var cookie_name = "layer_"+no;
+		setCookie( cookie_name, "done" , no ); 
+		//document.getElementById(no).style.display = "none";
+		$("#layer_"+no).css("display", "none");
+	}
+</script>
+		<div id="wrap">
+	
+	
+	<section>
+		<div class="area_visual">
+			<h2 class="logo">ucar<span>.</span>best</h2>
+			<div class="inr">
+				<figure>
+					<img src="/images/main/main_visual_pic.png" alt="">
+				</figure>
+				<figcaption>
+					<h2>
+						<img src="/images/main/main_copy5.png" alt="">
+						<!-- 자동차 보험료 최저가를 찾아라 -->
+					</h2>
+					<!-- <h3>
+						<img src="/images/main/main_copy2.png" alt="">
+						자동차보험 비교견적서비스
+					</h3> -->
+					<h4>
+						<img src="/images/main/main_copy3.png" alt="">
+						<!-- 유카베스트 -->
+					</h4>
+					<!-- <h5>
+						<img src="/images/main/main_copy4.png" alt="">
+						ucar.best
+					</h5> -->
+				</figcaption>
+			</div>
+		</div>
+	</section>
+	<section class="web_list">
+		<div class="ins_swiper">
+			<div class="ins_wrapper">
+				<!-- KB 손해보험 다이렉트 -->
+				<div class="ins_list">
+					<div>
+						<div>
+							<img src="/images/main/list_logo01.png" alt=""> 
+						</div>
+						<div>
+							<div>
+								<h2 class="blue_bg">고객이 자동차보험(CM)</h2>
+								<a href="https://direct.kbinsure.co.kr/websquare/promotion.jsp?pid=1090049&code=0790&page=step1">
+									인터넷으로 계산
+									<span><img src="/images/main/icon_check.png" alt=""></span>
+								</a>
+							</div>
+							<div>
+								<h2 class="blue_bg">아래 도우미전화로(TM)</h2>
+								<a href="tel:16446418">
+									<span><img src="/images/main/icon_call.png" alt=""></span> 1644-6418
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 현대해상 다이렉트 -->
+				<div class="ins_list">
+					<div>
+						<div>
+							<img src="/images/main/list_logo02.png" alt="">
+						</div>
+						<div>
+							<div>
+								<h2 class="blue_bg">고객이 자동차보험(CM)</h2>
+								<a href="https://direct.hi.co.kr/service.do?m=28680681ee&cnc_no=0361&media_no=B294&companyId=426">
+									인터넷으로 계산
+									<span><img src="/images/main/icon_check.png" alt=""></span>
+
+								</a>
+							</div>
+							<div>
+								<h2 class="blue_bg">아래 도우미전화로(TM)</h2>
+
+								<a href="tel:16446418">
+									<span><img src="/images/main/icon_call.png" alt=""></span> 050-6011-0961
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- DB 손해보험 다이렉트 -->
+				<div class="ins_list">
+					<div>
+						<div>
+							<img src="/images/main/list_logo03.png" alt="">
+						</div>
+						<div>
+							<div>
+								<h2 class="blue_bg">고객이 자동차보험(CM)</h2>
+								<a href="https://www.directdb.co.kr/product/at/pvuatarc/step1/formStepPre.do?partner_code=C460&CNC=123">
+									인터넷으로 계산
+									<span><img src="/images/main/icon_check.png" alt=""></span>
+
+								</a>
+							</div>
+							<div>
+								<h2 class="blue_bg">아래 도우미전화로(TM)</h2>
+
+								<a href="tel:16446418">
+									<span><img src="/images/main/icon_call.png" alt=""></span> 1600-1190
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 삼성화재 다이렉트 -->
+				<div class="ins_list">
+					<div>
+						<div>
+							<img src="/images/main/samsungLogo.png" alt="">
+						</div>
+						<div>
+							<div>
+								<h2 class="blue_bg">고객이 자동차보험(CM)</h2>
+								<a href="https://www.directdb.co.kr/product/at/pvuatarc/step1/formStepPre.do?partner_code=C460&CNC=123">
+									인터넷으로 계산
+									<span><img src="/images/main/icon_check.png" alt=""></span>
+
+								</a>
+							</div>
+							<div>
+								<h2 class="blue_bg">아래 도우미전화로(TM)</h2>
+
+								<a href="tel:16446418">
+									<span><img src="/images/main/icon_call.png" alt=""></span> 1600-1190
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 악사 -->
+				<div class="ins_list">
+					<div>
+						<div>
+							<img src="/images/main/list_logo04.png" alt="">
+						</div>
+						<div>
+							<div>
+								<h2 class="blue_bg">고객이 자동차보험(CM)</h2>
+								<a href="https://www.directdb.co.kr/product/at/pvuatarc/step1/formStepPre.do?partner_code=C460&CNC=123">
+									인터넷으로 계산
+									<span><img src="/images/main/icon_check.png" alt=""></span>
+
+								</a>
+							</div>
+							<div>
+								<h2 class="blue_bg">아래 도우미전화로(TM)</h2>
+
+								<a href="tel:16446418">
+									<span><img src="/images/main/icon_call.png" alt=""></span> 1600-1190
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- 이유 -->
+				<div class="ins_list">
+					<div>
+						<div>
+							<img src="/images/main/list_logo05.png" alt="">
+						</div>
+						<div>
+							<div>
+								<h2 class="blue_bg">고객이 자동차보험(CM)</h2>
+								<a href="https://www.directdb.co.kr/product/at/pvuatarc/step1/formStepPre.do?partner_code=C460&CNC=123">
+									인터넷으로 계산
+									<span><img src="/images/main/icon_check.png" alt=""></span>
+
+								</a>
+							</div>
+							<div>
+								<h2 class="blue_bg">아래 도우미전화로(TM)</h2>
+
+								<a href="tel:16446418">
+									<span><img src="/images/main/icon_call.png" alt=""></span> 1600-1190
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 한화 -->
+				<div class="ins_list">
+					<div>
+						<div>
+							<img src="/images/main/list_logo06.png" alt="">
+						</div>
+						<div>
+							<div>
+								<h2 class="blue_bg">고객이 자동차보험(CM)</h2>
+								<a href="https://www.directdb.co.kr/product/at/pvuatarc/step1/formStepPre.do?partner_code=C460&CNC=123">
+									인터넷으로 계산
+									<span><img src="/images/main/icon_check.png" alt=""></span>
+
+								</a>
+							</div>
+							<div>
+								<h2 class="blue_bg">아래 도우미전화로(TM)</h2>
+
+								<a href="tel:16446418">
+									<span><img src="/images/main/icon_call.png" alt=""></span> 1600-1190
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ins_list">
+					<div>
+						<div>
+							<img src="/images/main/meritzLogo.jpg" alt="">
+						</div>
+						<div>
+							<div>
+								<h2 class="blue_bg">고객이 자동차보험(CM)</h2>
+								<a href="https://www.directdb.co.kr/product/at/pvuatarc/step1/formStepPre.do?partner_code=C460&CNC=123">
+									인터넷으로 계산
+									<span><img src="/images/main/icon_check.png" alt=""></span>
+
+								</a>
+							</div>
+							<div>
+								<h2 class="blue_bg">아래 도우미전화로(TM)</h2>
+
+								<a href="tel:16446418">
+									<span><img src="/images/main/icon_call.png" alt=""></span> 1600-1190
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="mob_list">
+		<div class="ins_swiper">
+			<div class="ins_wrapper">
+				<div class="ins_list">
+					<div>
+						<div>
+							<img src="/images/main/list_logo01.png" alt=""> 
+						</div>
+						<div>
+							<div>
+								<h2 class="blue_bg">고객이 자동차보험(CM)</h2>
+								<a href="https://mdirect.kbinsure.co.kr/websquare/mobilePromotion.jsp?pid=1090049&code=0790&page=m_step1">
+									인터넷으로 계산
+									<span><img src="/images/main/icon_check.png" alt=""></span>
+								</a>
+							</div>
+							<div>
+								<h2 class="blue_bg">아래 도우미전화로(TM)</h2>
+								<a href="tel:16446418">
+									<span><img src="/images/main/icon_call.png" alt=""></span> 1644-6418
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ins_list">
+					<div>
+						<div>
+							<img src="/images/main/list_logo02.png" alt="">
+						</div>
+						<div>
+							<div>
+								<h2 class="blue_bg">고객이 자동차보험(CM)</h2>
+								<a href="https://mdirect.hi.co.kr/service.do?m=b5eef5f9a4&cnc_no=0361&media_no=B294&companyId=426">
+									인터넷으로 계산
+									<span><img src="/images/main/icon_check.png" alt=""></span>
+
+								</a>
+							</div>
+							<div>
+								<h2 class="blue_bg">아래 도우미전화로(TM)</h2>
+
+								<a href="tel:16446418">
+									<span><img src="/images/main/icon_call.png" alt=""></span> 050-6011-0961
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ins_list">
+					<div>
+						<div>
+							<img src="/images/main/list_logo03.png" alt="">
+						</div>
+						<div>
+							<div>
+								<h2 class="blue_bg">고객이 자동차보험(CM)</h2>
+								<a href="https://www.directdb.co.kr/product/at/pvuatarc/step1/formStepPre.do?partner_code=C460&CNC=123">
+									인터넷으로 계산
+									<span><img src="/images/main/icon_check.png" alt=""></span>
+
+								</a>
+							</div>
+							<div>
+								<h2 class="blue_bg">아래 도우미전화로(TM)</h2>
+
+								<a href="tel:16446418">
+									<span><img src="/images/main/icon_call.png" alt=""></span> 1600-1190
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="wrap2_btn">
+	</section>
+	<section class="wrap2 wrap2_mobile">
+			<div class="ins_swiper ins_swiper02">
+				<div class="ins_wrapper ">
+					<div class="ins_list">
+						<div>
+							<div>
+								<img src="/images/main/list_logo04.png" alt=""> 
+							</div>
+							<div>
+								<div>
+									<h2 class="blue_bg">고객이 자동차보험(CM)</h2>
+									<a href="https://m.axa.co.kr/indexm_email_relay.jsp?sm_flag=N&site_acq_src=0811401&cmpid=co_able_dis_sb_auto&relay_lang_type=ko&utm_source=able&utm_medium=affiliate&utm_campaign=auto&go_url=/mobdblcms/html/dmai/cal/dmai_cal_11_m.html&cnc_no=alble0128">
+										인터넷으로 계산
+										
+										<span><img src="/images/main/icon_check.png" alt=""></span>
+
+									</a>
+								</div>
+								<div>
+									<h2 class="blue_bg">아래 도우미전화로(TM) </h2>
+
+									<a href="tel:16446418">
+										<span><img src="/images/main/icon_call.png" alt=""></span> 1566-2156
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ins_list">
+						<div>
+							<div>
+								<img src="/images/main/list_logo05.png" alt="">
+							</div>
+							<div>
+								<div>
+									<h2 class="blue_bg">고객이 자동차보험(CM)</h2>
+									<a href="https://www.eyoudirect.co.kr/?ccid=0584001013">
+										인터넷으로 계산
+										<span><img src="/images/main/icon_check.png" alt=""></span>
+
+									</a>
+								</div>
+								<div>
+									<h2 class="blue_bg">아래 도우미전화로(TM)</h2>
+
+									<a href="tel:16446418">
+										<span><img src="/images/main/icon_call.png" alt=""></span> 050-6011-0963
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ins_list">
+						<div>
+							<div>
+								<img src="/images/main/list_logo13.png" alt=""> 
+							</div>
+							<div>
+								<div>
+									<h2 class="blue_bg red">인터넷으로 가입 X</h2>
+									<a href="javascript:void(0);">
+										도우미 전화만 가능 
+										<span><img src="/images/main/icon_check.png" alt=""></span>
+
+									</a>
+								</div>
+								<div>
+									<h2 class="blue_bg">아래 도우미전화로(TM)</h2>
+
+									<a href="tel:16446418">
+										<span><img src="/images/main/icon_call.png" alt=""></span> 050-6011-0962
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+	<section class="banner_wrap banner_wrap2">
+		<div class="banner">
+			<div>
+				<h2>KB손해보험의 다이렉트 운전자 보험등도 &nbsp; ~~~</h2>
+				<h2>함께 가입하시면 기쁨과 안심이 두배&nbsp; !!</h2>
+			</div>
+		</div>
+		<ul class="submit_list kblong_pc">
+			<li>
+				<img src="/images/main/img_logo01.png" alt="">
+				<div>
+					<h2>
+						운전자 보험
+					</h2>
+					<p>
+						운전자를 위한 보장 강화 !
+					</p>
+				</div>
+				<a href="https://direct.kbinsure.co.kr/websquare/promotion.jsp?pid=5000000&code=0003&page=dri_step1">
+					인터넷으로 계산 <img src="/images/main/icon_check.png" alt="">
+				</a>
+			</li>
+			<li>
+				<img src="/images/main/img_logo01.png" alt="">
+				<div>
+					<h2>
+						암 보험
+					</h2>
+					<p>
+						근심없이 치료에만 집중 !
+					</p>
+				</div>
+				<a href="https://mdirect.kbinsure.co.kr/websquare/mobilePromotion.jsp?pid=5000000&code=0005&page=m_diyCancer_step1">
+					인터넷으로 계산 <img src="/images/main/icon_check.png" alt="">
+				</a>
+			</li>
+			<li>
+				<img src="/images/main/img_logo01.png" alt="">
+				<div>
+					<h2>
+						주택 화재
+					</h2>
+					<p>
+						소중한 내 집, 미리미리 대비 !
+					</p>
+				</div>
+				<a href="https://direct.kbinsure.co.kr/websquare/promotion.jsp?pid=5000000&code=0004&page=houseFire_step1">
+					인터넷으로 계산 <img src="/images/main/icon_check.png" alt="">
+				</a>
+			</li>
+			<li>
+				<img src="/images/main/img_logo01.png" alt="">
+				<div>
+					<h2>
+						자녀 보험
+					</h2>
+					<p>
+						사랑스러운 내 아이를 위해 !
+					</p>
+				</div>
+				<a href="https://direct.kbinsure.co.kr/websquare/promotion.jsp?pid=5000000&code=0006&page=child_step1">
+					인터넷으로 계산 <img src="/images/main/icon_check.png" alt="">
+				</a>
+			</li>
+		</ul>
+		<ul class="submit_list kblong_m">
+			<li>
+				<img src="/images/main/img_logo01.png" alt="">
+				<div>
+					<h2>
+						운전자 보험
+					</h2>
+					<p>
+						운전자를 위한 보장 강화 !
+					</p>
+				</div>
+				<a href="https://mdirect.kbinsure.co.kr/websquare/mobilePromotion.jsp?pid=5000000&code=0003&page=m_dri_step1">
+					인터넷으로 계산 <img src="/images/main/icon_check.png" alt="">
+				</a>
+			</li>
+			<li>
+				<img src="/images/main/img_logo01.png" alt="">
+				<div>
+					<h2>
+						암 보험
+					</h2>
+					<p>
+						근심없이 치료에만 집중 !
+					</p>
+				</div>
+				<a href="https://mdirect.kbinsure.co.kr/websquare/mobilePromotion.jsp?pid=5000000&code=0005&page=m_diyCancer_step1">
+					인터넷으로 계산 <img src="/images/main/icon_check.png" alt="">
+				</a>
+			</li>
+			<li>
+				<img src="/images/main/img_logo01.png" alt="">
+				<div>
+					<h2>
+						주택 화재
+					</h2>
+					<p>
+						소중한 내 집, 미리미리 대비 !
+					</p>
+				</div>
+				<a href="https://mdirect.kbinsure.co.kr/websquare/mobilePromotion.jsp?pid=5000000&code=0004&page=m_houseFire_step1">
+					인터넷으로 계산 <img src="/images/main/icon_check.png" alt="">
+				</a>
+			</li>
+			<li>
+				<img src="/images/main/img_logo01.png" alt="">
+				<div>
+					<h2>
+						자녀 보험
+					</h2>
+					<p>
+						사랑스러운 내 아이를 위해 !
+					</p>
+				</div>
+				<a href="https://mdirect.kbinsure.co.kr/websquare/mobilePromotion.jsp?pid=5000000&code=0006&page=m_child_step1">
+					인터넷으로 계산 <img src="/images/main/icon_check.png" alt="">
+				</a>
+			</li>
+		</ul>
+	</section>
+	<section class="banner_wrap">
+		<div class="banner02">
+			<h2>
+				아래 &nbsp;자동차보험 &nbsp;할인혜택&nbsp; 및&nbsp; 특약은&nbsp; 보험사마다&nbsp; 세부내용이&nbsp; 상이합니다
+			</h2>
+		</div>
+		<div class="list_wrap">
+			<ul class="icon_list">
+				<li>
+					<img src="/images/main/icon_li01.png" alt="">
+					<h2>
+						주행거리<br>
+						특약할인
+					</h2>
+				</li>
+				<li>
+					<img src="/images/main/icon_li02.png" alt="">
+					<h2>
+						자녀할인<br>
+						특약
+					</h2>
+				</li>
+				<li>
+					<img src="/images/main/icon_li03.png" alt="">
+					<h2>
+						무사고<br>
+						할인
+					</h2>
+				</li>
+				<li>
+					<img src="/images/main/icon_li04.png" alt="">
+					<h2>
+						블랙박스<br>
+						특약할인
+					</h2>
+				</li>
+				<li>
+					<img src="/images/main/icon_li05.png" alt="">
+					<h2>
+						제휴신용카드<br>
+						할인
+					</h2>
+				</li>
+				<li>
+					<img src="/images/main/icon_li06.png" alt="">
+					<h2>
+						무이자카드<br>
+						할부
+					</h2>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section class="wrap2">
+			<div class="ins_swiper ins_swiper02">
+				<div class="ins_wrapper ">
+					
+				</div>
+			</div>
+	</section>
+	<section class="notice">
+		<h2>[보험 가입시 알아두실 사항]</h2>
+		<ul>
+			<li>이 보험계약은 예금자보호법에 따라 예금보험공사가 보호하되, 보호한도는 본 보험회사에 있는 귀하의 모든 예금보호대상 금융상품의 해약환급금(또는 만기시 보험금이나 사고보험금)에 기타 지급금을 합하여 1인당 "최고 5천만원"이며, 5천만원을 초과하는 나머지 금액은 보호하지 않습니다.</li>
+			<li>보험계약자가 기존에 체결했던 보험계약을 해지하고 다른 보험계약을 체결하면 보험인수가 거절되거나 보험료가 인상되거나 보장내용이 달라질 수 있습니다.</li>
+			<li>또한 지급한도, 면책사항 등에 따라 보험금 지급이 제한될 수 있습니다</li>
+			<li>보험계약 체결 전 상품설명서 및 약관을 읽어보시기 바랍니다.</li>
+		</ul>
+	</section>
+	<section class="notice2">
+		<div>
+			<div>
+				<h3>
+					※ KB손해보험 다이렉트
+				</h3>
+				<p>
+					<b>
+						자동차 보험 :
+					</b>
+					<span>
+						준법감시인 심의필 ► 제2023-883호, 심의기간 ► 2023.06.15 ~ 2024.06.14
+					</span>
+				</p>
+				<p>
+					<b>
+						장기 보험 :
+					</b>
+					<span>
+						준법감시인 심의필 ► 제2023-903호, 심의기간 ► 2023.06.15 ~ 2024.06.14
+					</span>
+				</p>
+			</div>
+			<div>
+				<h3>
+					※ 현대해상 다이렉트
+				</h3>
+				<p>
+					자동차 보험 : 
+				</p>
+			</div>
+			<div>
+				<h3>
+					※ DB손해보험 다이렉트
+				</h3>
+				<p>
+					자동차 보험 : 
+				</p>
+			</div>
+			<div>
+				<h3>
+					※ AXA 다이렉트
+				</h3>
+				<p>
+					자동차 보험 : 
+				</p>
+			</div>
+			<div>
+				<h3>
+					※ 이유 다이렉트
+				</h3>
+				<p>
+					자동차 보험 : 
+				</p>
+			</div>
+			<div>
+				<h3>
+					※ 한화손해보험 다이렉트
+				</h3>
+				<p>
+					자동차 보험 : 
+				</p>
+			</div>
+		</div>
+	</section>
+	<!-- 온라인 폼 쓰기 시작
+	<section class="wrap_area_estimate">
+		<div class="wrap_title">
+			<h2>견적문의</h2>
+			<h3 class="montserrat">online estimate</h3>
+			<p>하이워터주식회사는 최상의 고객서비스를 <br>제공하기 위해 노력합니다.</p>
+		</div>
+
+		<form action="online.html" method="POST">
+			<input type="hidden" name="online_id" value="koweb_online_counsel" />
+			<input type="hidden" name="return_url" value="/online.html?online_id=koweb_online_counsel" />
+			<input type="hidden" name="mode" value="write_proc" />
+			<input type="hidden" name="main_chk" value="Y" />
+
+			<input type="text" name="variable_1" placeholder="이름" title="이름" data-requierd>
+			<div>
+				<input type="text" name="phone1" data-requierd title="전화번호" placeholder="010" maxlength="3"> <span>-</span> <input type="text" name="phone2" data-requierd title="" placeholder="" maxlength="4"> <span>-</span> <input type="text" name="phone3" data-requierd title="전화번호 세번째자리" placeholder="" maxlength="4">
+			</div>
+
+			<div>
+				<input type="text" name="email1" data-requierd title="이메일" placeholder="이메일">
+				<span>@</span>
+				<input type="text" name="email3" data-requierd title="이메일 주소" placeholder="">
+			</div>
+
+			<textarea name="variable_2" placeholder="문의내용" title="문의내용" ></textarea>
+
+							<select name="variable_2" id="area" title="희망지역" class="location">
+								<option  value="타입세부를 입력해주세요">타입세부를 입력해주세요</option>
+								</select>
+
+			<div class="wrap_checkbox">
+				<input type="checkbox" id="checkbox" name="agree" value="Y">
+				<label for="checkbox">개인정보 수집에 대한 동의</label> <a href="javascript:;" id="privacyLink">자세히보기</a>
+			</div>
+
+			<button id="online_btn" type="submit">온라인 문의하기</button>
+		</form>
+
+	</section>
+	
+	<script>
+	$(document).ready(function(){
+		/* 개인정보보호정책 */
+		$('#privacyLink').on('click', function(){
+			open_xbox('/contents/common/main_agree.html', '개인정보 수집에 대한 동의', '600', '650');
+			return false;
+		});
+	});
+
+	$("#online_btn").click(function(){
+		var chk = true;
+
+		$("[data-requierd]").each(function(){
+			if($(this).val() == ""){
+				alert($(this).attr("title") + " 를(을) 입력해주세요.");
+				$(this).focus();
+				chk = false;
+				return false;
+			}
+		});
+		if(!chk) return false;
+
+		if($(":input:checkbox[name=agree]:checked").val()  != "Y"){
+			alert("개인 정보 수집에 대한 동의하셔야만 신청하실 수 있습니다.");
+			chk = false;
+			return false;
+		}
+
+		if(!chk) return false;
+	});
+	</script>
+	온라인 폼 쓰기 끝 -->
+		<ul>
+			</ul>
+	
+	<script type="text/javascript">
+	$(function(){
+		$("[data-board-section]").each(function(){
+			if($(this).children("li").length <= 0){
+				$(this).append("<li class='non_board_data' data-board-id='"+$(this).data("board-section")+"'>등록된 데이터가 없습니다.</li>");
+			}
+		});
+	});
+	</script>	
+
+			<!-- 서브페이지일때만 호출 영역 -->
+						
+			<!-- 서브페이지일때만 호출 영역 -->
+
+			<!-- footer -->
+			<footer id="footer">
+				<div class="inr">
+					<!-- <div class="customer">
+						<p>견적문의</p>
+						<a href="tel:0516465050">MOBILE. 0516465050</a>
+						<ul>
+							<li>
+								<a href="/contents/common/privacy.html" class="privacy" data-gnb="1" data-gnb-class="privacy">개인정보취급방침</a>
+							</li>
+							<li>
+								<a href="/contents/common/agree.html" class="agree" data-gnb="1"  data-gnb-class="agree">이용약관</a>
+							</li>
+							<li>
+								<a href="/contents/common/privacy_agree.html" class="privacy_agree" data-gnb="1"  data-gnb-class="privacy_agree">개인정보 수집 및 이용동의</a>
+							</li>
+						</ul>
+					</div> -->
+					<div class="footer_logo">
+						<img src="/images/main/footer_logo.png" alt="">
+					</div>
+					<div class="address">
+						<!-- [0-9]{3})([0-9]{3})([0-9]{4} {} 속 숫자를 바꿔 자리수 맞추기, "$1-$2-$3"의 -(하이픈) 삭제 및 변경 가능 -->
+						<address>
+							<span>대표이사 : 최순연</span>
+							<span>/ 사업자번호 : 874-87-02337</span>
+							<span>/ 주소 : 부산 부산진구 서전로 10번길 28, 1104호 (부전동) </span>
+							<span>/ 대표전화 : <a href="tel:0516465050">051-646-5050</a></span>
+							<!-- <span>팩스 070-123-41234</span> -->
+							<!-- <span>이메일 <a href="mailto:koweb@koweb.co.kr">koweb@koweb.co.kr</a></span> -->
+						</address>
+						<p>Copyright 유카베스트. all rights reserved. design by KOWEB<a href="/contents/common/marketing.html" target="_blank" title="대구홈페이지제작 대구웹 문의">.</a></p>
+					</div>
+
+				</div>
+			</footer>
+			<!-- //footer -->
+		</div>
+	</body>
+</html>
+	

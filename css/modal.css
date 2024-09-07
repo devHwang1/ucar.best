@@ -1,0 +1,82 @@
+.modal_container {
+    position: absolute;
+}
+
+.modal_container .modal_colgroup {
+    position: relative;
+    overflow: hidden;
+    float: left;
+    height: auto !important
+}
+
+.modal_container .modal_colgroup .modal_title {
+    cursor: default!important;
+    font-weight: 500;
+    clear: both !important;
+    height: 55px;
+    background: #686e82;
+    border-bottom: 1px solid #5e6374;
+    position: relative;
+    text-align: left;
+    padding-left: 15px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 55px;
+    display: block;
+    vertical-align: top;
+    letter-spacing: -1px;
+}
+
+.modal_container .modal_close {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 19px;
+    width: 19px;
+    height: 19px;
+    background: url(../images/module/btn_close.png) no-repeat 50% / contain;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+    line-height: 999px;
+}
+
+.modal_container .modal_close img {
+    display: none
+}
+
+.modal_content {
+    padding: 15px;
+    background-color: #fff;
+    box-sizing: border-box!important;
+    max-height: 85vh;
+    height: 620px!important
+}
+
+.modal_container .modal_boxgroup {
+    position: relative;
+    overflow: hidden;
+    float: left;
+    border: 2px solid #4a4a4a;
+    background-color: #fff;
+}
+
+.modal_contents {
+    float: left;
+    padding: 30px 20px 30px 20px;
+}
+
+#modalArea {
+    padding: 10px;
+}
+
+.modal_content iframe {
+    width: 100%!important;
+    height: 100%!important;
+}
+
+@media all and (max-width: 615px) {
+    .modal_colgroup {
+        width: 98%!important
+    }
+}
