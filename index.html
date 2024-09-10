@@ -74,8 +74,11 @@
 		window.onload = function() {
 			if (isMobile()) {
 				// 현재 도메인이 www 또는 루트 도메인이라면 모바일 페이지로 리디렉션
-				if (window.location.hostname !== 'm.ucar.best') {
-					window.location.href = 'https://m.ucar.best' + window.location.pathname;
+				//if (window.location.hostname !== 'm.ucar.best') {
+				//	window.location.href = 'https://m.ucar.best' + window.location.pathname;
+				//}
+				if (window.location.hostname !== 'https://devhwang1.github.io/ucar_m/') {
+					window.location.href = 'https://devhwang1.github.io/ucar_m/' + window.location.pathname;
 				}
 			}
 		};
