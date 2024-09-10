@@ -49,8 +49,37 @@
 
 	</head>
 	<body>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script type="text/javascript">
-//<![CDATA[
+
+		$(document).ready(function(){
+            // add_more 버튼을 클릭했을 때
+            $(".add_more").click(function(){
+                // hide_position 클래스의 요소들이 현재 상태를 확인하고 토글
+                $(".hide_position").each(function() {
+                    if ($(this).css("display") == "none") {
+                        $(this).css("display", "block");
+                    } else {
+                        $(this).css("display", "none");
+                    }
+                });
+            });
+        });
+		// 모바일 기기 감지 함수
+		function isMobile() {
+        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+		}
+
+		// 페이지 로드 시 모바일 기기인지 확인
+		window.onload = function() {
+			if (isMobile()) {
+				// 현재 도메인이 www 또는 루트 도메인이라면 모바일 페이지로 리디렉션
+				if (window.location.hostname !== 'm.ucar.best') {
+					window.location.href = 'https://m.ucar.best' + window.location.pathname;
+				}
+			}
+		};
+	//<![CDATA[
 	// 쿠키 체크
 	function getCookie(name)
 	{
@@ -131,7 +160,7 @@
 						</div>
 						<div>
 							<div>
-								<h2 class="blue_bg">고객이 자동차보험(CM)</h2>
+								<h2 class="blue_bg">고객이 자동차보험</h2>
 								<a href="https://direct.kbinsure.co.kr/websquare/promotion.jsp?pid=1090049&code=0790&page=step1">
 									인터넷으로 계산
 									<span><img src="/images/main/icon_check.png" alt=""></span>
@@ -154,7 +183,7 @@
 						</div>
 						<div>
 							<div>
-								<h2 class="blue_bg">고객이 자동차보험(CM)</h2>
+								<h2 class="blue_bg">고객이 자동차보험</h2>
 								<a href="https://direct.hi.co.kr/service.do?m=28680681ee&cnc_no=0361&media_no=B294&companyId=426">
 									인터넷으로 계산
 									<span><img src="/images/main/icon_check.png" alt=""></span>
@@ -179,7 +208,7 @@
 						</div>
 						<div>
 							<div>
-								<h2 class="blue_bg">고객이 자동차보험(CM)</h2>
+								<h2 class="blue_bg">고객이 자동차보험</h2>
 								<a href="https://www.directdb.co.kr/product/at/pvuatarc/step1/formStepPre.do?partner_code=C460&CNC=123">
 									인터넷으로 계산
 									<span><img src="/images/main/icon_check.png" alt=""></span>
@@ -204,8 +233,8 @@
 						</div>
 						<div>
 							<div>
-								<h2 class="blue_bg">고객이 자동차보험(CM)</h2>
-								<a href="https://www.directdb.co.kr/product/at/pvuatarc/step1/formStepPre.do?partner_code=C460&CNC=123">
+								<h2 class="blue_bg">고객이 자동차보험</h2>
+								<a href="https://direct.samsungfire.com/CR_MyAnycarWeb/overture_index.jsp?OTK=A2406AF0020">
 									인터넷으로 계산
 									<span><img src="/images/main/icon_check.png" alt=""></span>
 
@@ -222,15 +251,15 @@
 					</div>
 				</div>
 				<!-- 메리츠 -->
-				<div class="ins_list">
+				<div class="ins_list hide_position">
 					<div>
 						<div>
 							<img src="/images/main/meritzLogo.jpg" alt="">
 						</div>
 						<div>
 							<div>
-								<h2 class="blue_bg">고객이 자동차보험(CM)</h2>
-								<a href="https://www.directdb.co.kr/product/at/pvuatarc/step1/formStepPre.do?partner_code=C460&CNC=123">
+								<h2 class="blue_bg">고객이 자동차보험</h2>
+								<a href="https://store.meritzfire.com/DAP2406CA000005/southeaster.do">
 									인터넷으로 계산
 									<span><img src="/images/main/icon_check.png" alt=""></span>
 
@@ -247,15 +276,15 @@
 					</div>
 				</div>
 				<!-- 악사 -->
-				<div class="ins_list">
+				<div class="ins_list hide_position">
 					<div>
 						<div>
 							<img src="/images/main/list_logo04.png" alt="">
 						</div>
 						<div>
 							<div>
-								<h2 class="blue_bg">고객이 자동차보험(CM)</h2>
-								<a href="https://www.directdb.co.kr/product/at/pvuatarc/step1/formStepPre.do?partner_code=C460&CNC=123">
+								<h2 class="blue_bg">고객이 자동차보험</h2>
+								<a href="https://www.axa.co.kr/index_email_relay.jsp?sm_flag=N&site_acq_src=0104522&cmpid=co_able_dis_sb_auto&relay_lang_type=ko&go_url=%2FActionControler.action%3FscreenID%3DSHAI0000%26actionID%3DI01%26utm_source%3Dable%26utm_medium%3Daffiliate%26utm_campaign%3Dauto&cnc_no=alble0128">
 									인터넷으로 계산
 									<span><img src="/images/main/icon_check.png" alt=""></span>
 
@@ -273,15 +302,15 @@
 				</div>
 				
 				<!-- 이유 -->
-				<div class="ins_list">
+				<div class="ins_list hide_position">
 					<div>
 						<div>
 							<img src="/images/main/list_logo05.png" alt="">
 						</div>
 						<div>
 							<div>
-								<h2 class="blue_bg">고객이 자동차보험(CM)</h2>
-								<a href="https://www.directdb.co.kr/product/at/pvuatarc/step1/formStepPre.do?partner_code=C460&CNC=123">
+								<h2 class="blue_bg">고객이 자동차보험</h2>
+								<a href="https://www.eyoudirect.co.kr/?ccid=0584001013#/">
 									인터넷으로 계산
 									<span><img src="/images/main/icon_check.png" alt=""></span>
 
@@ -298,16 +327,16 @@
 					</div>
 				</div>
 				<!-- 한화 -->
-				<div class="ins_list">
+				<div class="ins_list hide_position">
 					<div>
 						<div>
 							<img src="/images/main/list_logo06.png" alt="">
 						</div>
 						<div>
 							<div>
-								<h2 class="blue_bg">고객이 자동차보험(CM)</h2>
-								<a href="https://www.directdb.co.kr/product/at/pvuatarc/step1/formStepPre.do?partner_code=C460&CNC=123">
-									인터넷으로 계산
+								<h2 class="blue_bg" style="color: red;">인터넷으로 가입X</h2>
+								<a href="">
+									050-6011-0962
 									<span><img src="/images/main/icon_check.png" alt=""></span>
 
 								</a>
@@ -324,6 +353,7 @@
 				</div>
 				
 			</div>
+			<div class="add_more"style="display: flex;align-items: center;justify-content: space-evenly;">더보기</div>
 		</div>
 	</section>
 	<section class="mob_list">
@@ -336,7 +366,9 @@
 						</div>
 						<div>
 							<div>
-								<h2 class="blue_bg">고객이 자동차보험(CM)</h2>
+								<h2 class="blue_bg">고객이 자동차보험
+
+								</h2>
 								<a href="https://mdirect.kbinsure.co.kr/websquare/mobilePromotion.jsp?pid=1090049&code=0790&page=m_step1">
 									인터넷으로 계산
 									<span><img src="/images/main/icon_check.png" alt=""></span>
@@ -358,7 +390,7 @@
 						</div>
 						<div>
 							<div>
-								<h2 class="blue_bg">고객이 자동차보험(CM)</h2>
+								<h2 class="blue_bg">고객이 자동차보험</h2>
 								<a href="https://mdirect.hi.co.kr/service.do?m=b5eef5f9a4&cnc_no=0361&media_no=B294&companyId=426">
 									인터넷으로 계산
 									<span><img src="/images/main/icon_check.png" alt=""></span>
@@ -382,7 +414,7 @@
 						</div>
 						<div>
 							<div>
-								<h2 class="blue_bg">고객이 자동차보험(CM)</h2>
+								<h2 class="blue_bg">고객이 자동차보험</h2>
 								<a href="https://www.directdb.co.kr/product/at/pvuatarc/step1/formStepPre.do?partner_code=C460&CNC=123">
 									인터넷으로 계산
 									<span><img src="/images/main/icon_check.png" alt=""></span>
@@ -414,7 +446,7 @@
 							</div>
 							<div>
 								<div>
-									<h2 class="blue_bg">고객이 자동차보험(CM)</h2>
+									<h2 class="blue_bg">고객이 자동차보험</h2>
 									<a href="https://m.axa.co.kr/indexm_email_relay.jsp?sm_flag=N&site_acq_src=0811401&cmpid=co_able_dis_sb_auto&relay_lang_type=ko&utm_source=able&utm_medium=affiliate&utm_campaign=auto&go_url=/mobdblcms/html/dmai/cal/dmai_cal_11_m.html&cnc_no=alble0128">
 										인터넷으로 계산
 										
@@ -439,7 +471,7 @@
 							</div>
 							<div>
 								<div>
-									<h2 class="blue_bg">고객이 자동차보험(CM)</h2>
+									<h2 class="blue_bg">고객이 자동차보험</h2>
 									<a href="https://www.eyoudirect.co.kr/?ccid=0584001013">
 										인터넷으로 계산
 										<span><img src="/images/main/icon_check.png" alt=""></span>
